@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made By SWARNAVA</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        nav {
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h6 {
+            font-size: 10px;
+            position: relative;
+            right: 100px;
+            top: 10px;
+            font-weight: lighter;
+        }
+
+        div img {
+            height: 40px;
+            margin: 5px;
+            display: flex;
+        }
+
+        div h2 {
+            margin-top: 10px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: end;
+            text-decoration: none;
+
+        }
+
+        div ul li {
+            list-style: none;
+        }
+
+        div ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        div a {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: smaller;
+        }
+
+        .head {
+            display: flex;
+        }
+
+        li img {
+            margin: 0px;
+            height: 25px;
+            width: 25px;
+        }
+
+        .heading {
+            margin: 90px;
+            font-size: 30px;
+            text-align: center;
+            width: 75vw;
+            margin-left: 140px;
+        }
+
+        article h2 {
+            font-weight: lighter;
+            letter-spacing: 1px;
+        }
+
+        article p {
+            font-size: 22px;
+            font-weight: 100;
+            margin-top: 30px;
+            margin: 45px;
+        }
+
+        article button {
+            height: 50px;
+            padding: 15px;
+            padding-bottom: 35px;
+            border-radius: 5px;
+            margin-top: -10px;
+            font-weight: 900;
+            border: 1px solid rgb(147, 219, 247);
+            background-color: rgb(101, 190, 225);
+            color: aliceblue;
+        }
+
+        .container {
+
+            display: grid;
+            justify-items: center;
+            margin: 50px;
+            grid-columns: 300px 300px 300px;
+            grid-rows: 250px 250px 250px 250px;
+            row-gap: 30px;
+        }
+
+        .one {
+            height: 200px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .two {
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .three {
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .four {
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .five {
+
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .six {
+
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .seven {
+
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .eight {
+            grid-area: 1;
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .nine {
+            grid-area: 1;
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+
+        .ten {
+            grid-area: 1;
+            height: 200px;
+
+            width: 250px;
+            text-align: center;
+        }
+        .grid{
+            background-color: rgb(235, 242, 247);
+            border-radius: 10px;
+        }
+
+        .container h2 {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        .container button {
+            height: 30px;
+            width: 150px;
+            padding: 10px;
+            padding-bottom: 25px;
+            border-radius: 10px;
+            border: solid rgb(137, 214, 60);
+            background-color: rgb(137, 214, 60);
+            color: aliceblue;
+            font-weight: bolder;
+        }
+
+        .container p {
+            font-size: 8px;
+            margin-top: 20px;
+        }
+
+        .download {
+            font-size: 25px;
+            margin-left: 14vw;
+            display: flex;
+            border-left-style: 4px;
+        }
+
+        .style {
+            font-size: 14px;
+            position: relative;
+            top: 10px;
+        }
+
+        .download img {
+            position: relative;
+            bottom: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(37, 185, 185);
+        }
+
+        @media only screen and (max-width: 520px) {
+            .container {
+                grid-template-columns: 300px;
+            }
+        }
+
+        .container {
+            display: grid;
+            justify-items: center;
+            margin: 50px;
+            grid-columns: 300px 300px 300px;
+            grid-rows: 250px 250px 250px 250px;
+            row-gap: 30px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="head">
+            <div class="img">
+                <img src="icon.png" alt="">
+            </div>
+            <div class="icon">
+                <h2>UltraEdit</h2><br>
+                <h6> An idea inc,company</h6>
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">For buisness</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Academic licensing</a></li>
+                <li><a href="#">Our company</a></li>
+                <li><img src="icon6.jpg" alt=""></li>
+                <li><img src="search 2.png" alt=""></li>
+        </div>
+    </nav>
+    <article class="heading">
+        <h2>Download <b>UltraEdit</b> for Windows &nbsp;<img src="whatever2.png" alt=""></h2>
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor.</p>
+        <a href="https://www.ultraedit.com/downloads/uex-thank-you/" class="button"><button>MAC OR LINUX
+                VERSION</button></a>
+    </article>
+    <div class="download">
+        <img src="icon.png" alt="">
+        <span>Download UltraEdit </span>&nbsp;
+        <span class="style">(released 2025-03-21) | Hotfix information</span>
+    </div>
+    <div class="container">
+        <div class="one grid">
+            <h2>Português brasileiro</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*1b0jepf*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyNTIxOC41LjEuMTc0MzIyNTIzNi40Mi4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="two grid">
+            <h2>français</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe?_gl=1*z2kn4e*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyODg5Ni42LjAuMTc0MzIyODg5Ni42MC4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="three grid">
+            <h2>Italiano</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe?_gl=1*7ktpia*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyNTIxOC41LjAuMTc0MzIyNTIyMS41Ny4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="four grid">
+            <h2>華語</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe?_gl=1*rasqw2*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyNTIxOC41LjEuMTc0MzIyNTIzNS40My4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="five grid">
+            <h2>日本</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe?_gl=1*174ulgx*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyNTIxOC41LjEuMTc0MzIyNTIzMS40Ny4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="six grid">
+            <h2>한국어</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe?_gl=1*f3p2ef*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyNTIxOC41LjEuMTc0MzIyNTIzMi40Ni4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="seven grid">
+            <h2>华语</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe?_gl=1*157rqgg*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyNTIxOC41LjEuMTc0MzIyNTIzMy40NS4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="eight grid">
+            <h2>English</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1v9vel7*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyMjQ1NS40LjAuMTc0MzIyMjQ1NS42MC4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="nine grid">
+            <h2>Deutsch</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe?_gl=1*hibkw9*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyNTIxOC41LjAuMTc0MzIyNTIxOC42MC4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+        <div class="ten grid">
+            <h2>Español</h2>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe?_gl=1*1bdjeyo*_gcl_au*MjAwMTA5NDAxLjE3NDMxNDg2MDU.*_ga*MTAyNDc2NTgzMC4xNzQzMTQ4NjA1*_ga_QNXHVTPWNS*MTc0MzIyODg5Ni42LjEuMTc0MzIyOTU0MS42MC4wLjA."><button>Download
+                    64-bit</button></a>
+            <p>
+                SHA256
+                ECE5D50C7E98A334AC2BADAC00E8E53B6KJHFELIFHQEIF<BR>
+                KUFHLIEHFALEFHALFH
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

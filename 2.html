@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev</title>
+    <script src="index.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        :root {
+            --color: rgb(241, 108, 25);
+            --secondarycolor: antiquewhite;
+        }
+
+        h2 {
+            margin: 5px;
+            position: relative;
+            left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--color);
+            display: flex;
+            margin-right: 160px;
+            font-size: 27px;
+        }
+
+        li {
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 15px;
+            margin-right: 80px;
+            left: 160px;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        li a {
+            text-decoration: none;
+            color: antiquewhite;
+            transition: 0.4s;
+        }
+
+        .header {
+            display: flex
+        }
+
+        .menu {
+            word-spacing: -2px;
+            transition: 2s;
+        }
+
+        .search {
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        input {
+            width: 150px;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            height: 27px;
+            background: transparent;
+            border: 1px solid var(--color);
+            color: var(--color);
+        }
+
+        button {
+            width: 70px;
+            position: relative;
+            right: 8px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 29px;
+            border: 1px solid var(--color);
+            background-color: var(--color);
+            color: aliceblue;
+            transition: .4s;
+        }
+
+        button:hover {
+            color: black;
+        }
+
+        .para {
+            margin: 5px;
+            position: relative;
+            top: 126px;
+            left: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            width: 50vw;
+        }
+
+        h1 {
+            color: antiquewhite;
+            line-height: 50px;
+        }
+
+        span {
+            letter-spacing: 2px;
+            font-size: 45px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: var(--color);
+        }
+
+        div p {
+            font-size: 13px;
+            position: relative;
+            top: 10px;
+            color: rgb(183, 184, 186);
+            line-height: 23px;
+        }
+
+        footer button {
+            position: relative;
+            top: 25vh;
+            left: 35px;
+            border-radius: 7px;
+            color: black;
+            width: 100px;
+            height: 30px;
+            transition: .4s;
+        }
+
+        footer button:hover {
+            background-color: var(--secondarycolor);
+        }
+
+        a:hover {
+            color: var(--color);
+        }
+
+        main {
+            position: relative;
+            left: 70vw;
+            bottom: 24vh;
+            height: 60vh;
+            width: 250px;
+            border-radius: 10px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgb(0, 0, 0, 0.8)50%);
+            padding: 20px;
+        }
+
+        main form h2 {
+            margin: 2px;
+            margin-left: -28px;
+            background: white;
+            width: 80%;
+            border-radius: 5px;
+            justify-content: center;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 20px;
+            width: 250px;
+        }
+
+        main form input {
+            margin-top: 30px;
+            width: 99%;
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid var(--color);
+        }
+
+        ::placeholder {
+            color: rgb(198, 197, 195);
+        }
+
+        .form {
+            display: inline-flex;
+        }
+
+        .three {
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+
+        .button {
+            width: 100%;
+            border-radius: 10px;
+            font-weight: bolder;
+            color: black;
+            font-family: sans-serif;
+            transition: .2s;
+            margin-bottom: 6px;
+        }
+
+        .button:hover {
+            background-color: aliceblue;
+        }
+
+        .p {
+            color: var(--secondarycolor);
+            padding-top: 23px;
+            margin: auto 50px;
+            text-align: center;
+        }
+
+        .a {
+            color: var(--color);
+            text-decoration: none;
+        }
+
+        .a:hover {
+            color: white;
+        }
+
+        .par {
+            color: var(--secondarycolor);
+            font-size: 13px;
+            position: relative;
+            top: 20px;
+            left: 100px;
+        }
+
+     
+    </style>
+</head>
+
+<body background="my img.jpg">
+    <div class="load" id="loader" style="display: flex; height: 100%; width: 100%;
+    text-align: center; justify-content: center; color:aliceblue; margin-top:
+    10vh; font-size: 50px; word-spacing: 5px ; letter-spacing: 3px;">
+        <b>page is loading...</b>
+    </div>
+    <div class="content" id="content" style="display: none ">
+        <div class="nav">
+            <div class="header">
+                <h2>PixelPerk</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="/">SERVICE</a></li>
+                    <li><a href="/">DESIGN</a></li>
+                    <li><a href="/">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="post" class="form">
+                    <input type="text" name="search" id="two" placeholder="Type To Search">
+                    <div>
+                        <button>Search</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="para">
+            <h1>Web Design &<br>
+                <span>Development</span><br>
+                Course
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, non deleniti quas, blanditiis consequatur
+                hic atque debitis aut ea ad, quibusdam molestiae tempore eligendi?</p>
+        </div>
+        <footer>
+            <button>JOIN US</button>
+        </footer>
+        <main>
+            <form action="post">
+                <h2 class="two">Login Here</h2>
+                <input type="email" name="email" id="email" placeholder="Enter Email Here">
+                <input type="password" name="pswd" id="pswd" placeholder="Enter Password Here">
+                <div class="three">
+                    <button class="button" onclick={login(event)}>Login</button>
+                    <button type="reset" class="button">Reset</button>
+                </div>
+                <p class="p">Dont have an account?<br>
+                    <a href="/" class="a">Sign up</a> here<br>
+                </p>
+                <p class="par">login with</p>
+
+                <i style="color: beige;" class="fas fa-band-aid"></i>
+            </form>
+        </main>
+    </div>
+</body>
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(() => {
+            const loader = document.getElementById('loader').style.display = 'none';
+            const content = document.getElementById('content').style.display = 'block';    
+        }, 5000);
+    });
+</script>
+
+</html>
